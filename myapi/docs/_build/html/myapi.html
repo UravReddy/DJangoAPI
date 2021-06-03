@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>myapi package &#8212; UravAPI  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="myapi.migrations package" href="myapi.migrations.html" />
+    <link rel="prev" title="myapi" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="myapi-package">
+<h1>myapi package<a class="headerlink" href="#myapi-package" title="Permalink to this headline">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="myapi.migrations.html">myapi.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="myapi.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="myapi.migrations.html#module-myapi.migrations.0001_initial">myapi.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="myapi.migrations.html#module-myapi.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-myapi.admin">
+<span id="myapi-admin-module"></span><h2>myapi.admin module<a class="headerlink" href="#module-myapi.admin" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-myapi.apps">
+<span id="myapi-apps-module"></span><h2>myapi.apps module<a class="headerlink" href="#module-myapi.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.apps.MyapiConfig">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.apps.</span></span><span class="sig-name descname"><span class="pre">MyapiConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.apps.MyapiConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.apps.MyapiConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#myapi.apps.MyapiConfig.default_auto_field" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.apps.MyapiConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'myapi'</span></em><a class="headerlink" href="#myapi.apps.MyapiConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-myapi.models">
+<span id="myapi-models-module"></span><h2>myapi.models module<a class="headerlink" href="#module-myapi.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.models.Client">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.models.</span></span><span class="sig-name descname"><span class="pre">Client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientCountry</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.models.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="myapi.models.Client.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#myapi.models.Client.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="myapi.models.Client.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#myapi.models.Client.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Client.clientCountry">
+<span class="sig-name descname"><span class="pre">clientCountry</span></span><a class="headerlink" href="#myapi.models.Client.clientCountry" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Client.clientName">
+<span class="sig-name descname"><span class="pre">clientName</span></span><a class="headerlink" href="#myapi.models.Client.clientName" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Client.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#myapi.models.Client.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Client.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#myapi.models.Client.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.models.Project">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.models.</span></span><span class="sig-name descname"><span class="pre">Project</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectLanguage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectClient</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.models.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="myapi.models.Project.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#myapi.models.Project.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="myapi.models.Project.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#myapi.models.Project.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Project.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#myapi.models.Project.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Project.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#myapi.models.Project.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Project.projectClient">
+<span class="sig-name descname"><span class="pre">projectClient</span></span><a class="headerlink" href="#myapi.models.Project.projectClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Project.projectLanguage">
+<span class="sig-name descname"><span class="pre">projectLanguage</span></span><a class="headerlink" href="#myapi.models.Project.projectLanguage" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.models.Project.projectName">
+<span class="sig-name descname"><span class="pre">projectName</span></span><a class="headerlink" href="#myapi.models.Project.projectName" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="myapi-send-module">
+<h2>myapi.send module<a class="headerlink" href="#myapi-send-module" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-myapi.serializers">
+<span id="myapi-serializers-module"></span><h2>myapi.serializers module<a class="headerlink" href="#module-myapi.serializers" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.serializers.ClientSerializer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.serializers.</span></span><span class="sig-name descname"><span class="pre">ClientSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.serializers.ClientSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.HyperlinkedModelSerializer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.serializers.ClientSerializer.Meta">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#myapi.serializers.ClientSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.serializers.ClientSerializer.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">['id',</span> <span class="pre">'clientName',</span> <span class="pre">'clientCountry']</span></em><a class="headerlink" href="#myapi.serializers.ClientSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.serializers.ClientSerializer.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#myapi.serializers.ClientSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#myapi.models.Client" title="myapi.models.Client"><code class="xref py py-class docutils literal notranslate"><span class="pre">myapi.models.Client</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.serializers.ProjectSerializer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.serializers.</span></span><span class="sig-name descname"><span class="pre">ProjectSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.serializers.ProjectSerializer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.serializers.HyperlinkedModelSerializer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.serializers.ProjectSerializer.Meta">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#myapi.serializers.ProjectSerializer.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.serializers.ProjectSerializer.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">['id',</span> <span class="pre">'projectName',</span> <span class="pre">'projectLanguage',</span> <span class="pre">'projectClient']</span></em><a class="headerlink" href="#myapi.serializers.ProjectSerializer.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.serializers.ProjectSerializer.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#myapi.serializers.ProjectSerializer.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#myapi.models.Project" title="myapi.models.Project"><code class="xref py py-class docutils literal notranslate"><span class="pre">myapi.models.Project</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-myapi.tests">
+<span id="myapi-tests-module"></span><h2>myapi.tests module<a class="headerlink" href="#module-myapi.tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-myapi.urls">
+<span id="myapi-urls-module"></span><h2>myapi.urls module<a class="headerlink" href="#module-myapi.urls" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-myapi.views">
+<span id="myapi-views-module"></span><h2>myapi.views module<a class="headerlink" href="#module-myapi.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="myapi.views.ClientDeleteByCountry">
+<span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">ClientDeleteByCountry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.ClientDeleteByCountry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">ClientFilterSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.ClientFilterSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.basename">
+<span class="sig-name descname"><span class="pre">basename</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.detail">
+<span class="sig-name descname"><span class="pre">detail</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.queryset">
+<span class="sig-name descname"><span class="pre">queryset</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;QuerySet</span> <span class="pre">[&lt;Client:</span> <span class="pre">Urav&gt;]&gt;</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.serializer_class">
+<span class="sig-name descname"><span class="pre">serializer_class</span></span><a class="headerlink" href="#myapi.views.ClientFilterSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#myapi.serializers.ClientSerializer" title="myapi.serializers.ClientSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">myapi.serializers.ClientSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ClientFilterSet.suffix">
+<span class="sig-name descname"><span class="pre">suffix</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ClientFilterSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapi.views.ProjectDeleteByLanguage">
+<span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">ProjectDeleteByLanguage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.ProjectDeleteByLanguage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">ProjectViewSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.ProjectViewSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rest_framework.viewsets.ModelViewSet</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.basename">
+<span class="sig-name descname"><span class="pre">basename</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.basename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.detail">
+<span class="sig-name descname"><span class="pre">detail</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.queryset">
+<span class="sig-name descname"><span class="pre">queryset</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;QuerySet</span> <span class="pre">[&lt;Project:</span> <span class="pre">Urav&gt;]&gt;</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.queryset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.serializer_class">
+<span class="sig-name descname"><span class="pre">serializer_class</span></span><a class="headerlink" href="#myapi.views.ProjectViewSet.serializer_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#myapi.serializers.ProjectSerializer" title="myapi.serializers.ProjectSerializer"><code class="xref py py-class docutils literal notranslate"><span class="pre">myapi.serializers.ProjectSerializer</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myapi.views.ProjectViewSet.suffix">
+<span class="sig-name descname"><span class="pre">suffix</span></span><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#myapi.views.ProjectViewSet.suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapi.views.delete_client">
+<span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">delete_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.delete_client" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myapi.views.delete_project">
+<span class="sig-prename descclassname"><span class="pre">myapi.views.</span></span><span class="sig-name descname"><span class="pre">delete_project</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myapi.views.delete_project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-myapi">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-myapi" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">UravAPI</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">myapi</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">myapi package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">myapi</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">myapi</a></li>
+      <li>Next: <a href="myapi.migrations.html" title="next chapter">myapi.migrations package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Urav.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/myapi.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
